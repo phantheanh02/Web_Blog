@@ -41,6 +41,7 @@
 
 
         <div class="navbar-nav ml-auto w-100">
+          
           <!-- SEARCHBAR -->
           <div id="searchbar" class="w-100 h-100">
             <form method="GET" action="/search" class="h-100">
@@ -60,15 +61,12 @@
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
             <a class="dropdown-item" href="{% url 'profile-detail-view' user.id %}"><i
                 class="far fa-user"></i>&nbsp;&nbsp;Profile</a>
-            <!-- <a class="dropdown-item" href="{% url 'public-profile' user %}"><i class="far fa-eye"></i>&nbsp;&nbsp;Public-Profile</a> -->
-            <!-- <a class="dropdown-item" href="{% url 'profile' %}"><i class="fas fa-sliders-h"></i>&nbsp;&nbsp;Settings</a> -->
+           
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{% url 'logout' %}"><i class="fas fa-power-off"></i>&nbsp;&nbsp;Logout</a>
           </div>
         </div>
         {% else %}
-        <!-- <a class="nav-item nav-link" href="{% url 'account_login' %}">Login</a> -->
-        <!-- <a class="nav-item nav-link" href="{% url 'register' %}">Register</a> -->
         {% endif %}
       </div>
 
